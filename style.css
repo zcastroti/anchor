@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+/*---------------------------------
+		Estilo Global
+---------------------------------*/
+* { margin: 0%; padding: 0%; font: 1em "Lexend", sans-serif; }
+html , body { width: 100%; height: 100%; }
+::-webkit-scrollbar {  width: 0%; height: 0%; }
+:focus-visible { outline: none; }
+
+/*---------------------------------
+		Main
+---------------------------------*/
+main {
+    margin: auto;
+    max-width: 280px;
+    height: 100%;
+    background-color: #000000b3;
+    color: white;
+    padding: 20px;
+}
+/*---------------------------------
+		H1 & H2
+---------------------------------*/
+h1 {
+
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+h2 {
+    text-align: center;
+    color: #57b45b;
+}
+
+
+/*---------------------------------
+        Fieldset
+---------------------------------*/
+fieldset {
+    max-width: 200px;
+    margin: 10px auto;
+    padding: 20px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    border-radius: 3px;
+}
+/*---------------------------------
+        Legend
+---------------------------------*/
+legend {
+    font-size: 18px;
+    padding: 0px 5px;
+}
+/*---------------------------------
+        Âncora
+---------------------------------*/
+a { 
+    text-decoration: none; 
+    color: white;
+}
+
+a:hover{ color: #57b45b; }
+
