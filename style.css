@@ -24,16 +24,18 @@ html , body {
 ---------------------------------*/
 main {
     margin: auto;
-    max-width: 280px;
+    min-width: 360px;
+    max-width: 300px;
     height: 100%;
-    background-color: #000000b3;
+    background-color: #000000b0;
     color: white;
-    padding: 20px;
+    padding: 0px 20px;
 }
 /*---------------------------------
 		H1 & H2
 ---------------------------------*/
 h1 {
+    padding: 20px 0px 0px;
     text-align: center;
     font-weight: 700;
     font-size: 30px;
@@ -44,7 +46,6 @@ h2 {
     color: #57b45b;
 }
 
-
 /*---------------------------------
         Fieldset
 ---------------------------------*/
@@ -54,8 +55,8 @@ fieldset {
     padding: 20px;
     display: flex;
     flex-flow: column;
-    justify-content: space-around;
     align-items: flex-end;
+    justify-content: center;
     border-radius: 3px;
 }
 /*---------------------------------
@@ -68,10 +69,25 @@ legend {
 /*---------------------------------
         Âncora
 ---------------------------------*/
-a { 
-    text-decoration: none; 
-    color: white;
-}
-
+a { text-decoration: none; color: white; }
 a:hover{ color: #57b45b; }
 
+/*---------------------------------
+        Bloco Flutuante
+---------------------------------*/
+#blocoFlutuante {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    visibility: hidden;
+    display: flex;
+    gap: 20px;
+    flex-flow: column;
+    justify-content: center;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+@media screen and (min-width: 550px) {
+    #blocoFlutuante { visibility: visible; }
+}
