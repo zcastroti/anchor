@@ -25,9 +25,8 @@ html , body {
 main {
     margin: auto;
     min-width: 360px;
-    max-width: 300px;
     height: 100%;
-    background-color: #000000b0;
+    background: linear-gradient(to top, #00000070, #000000fa);
     color: white;
     padding: 0px 20px;
 }
@@ -58,6 +57,7 @@ fieldset {
     align-items: flex-end;
     justify-content: center;
     border-radius: 3px;
+    border: dashed 1px white;
 }
 /*---------------------------------
         Legend
@@ -71,23 +71,3 @@ legend {
 ---------------------------------*/
 a { text-decoration: none; color: white; }
 a:hover{ color: #57b45b; }
-
-/*---------------------------------
-        Bloco Flutuante
----------------------------------*/
-#blocoFlutuante {
-    position: absolute;
-    left: 30px;
-    top: 50%;
-    visibility: hidden;
-    display: flex;
-    gap: 20px;
-    flex-flow: column;
-    justify-content: center;
-    vertical-align: middle;
-    padding: 10px;
-}
-
-@media screen and (min-width: 550px) {
-    #blocoFlutuante { visibility: visible; }
-}
