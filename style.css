@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
 /*---------------------------------
@@ -17,19 +16,16 @@ html , body {
     height: 100%;
     background: url(banner.png) no-repeat , black;
     background-size: cover;
-    background-attachment: fixed;
-}
+    background-attachment: fixed; }
 /*---------------------------------
 		Main
 ---------------------------------*/
 main {
     margin: auto;
-    min-width: 360px;
     height: 100%;
-    background: linear-gradient(to top, #00000070, #000000fa);
+    background: linear-gradient(to top, #00000070, #000000a6);
     color: white;
-    padding: 0px 20px;
-}
+    padding: 0px 20px; }
 /*---------------------------------
 		H1 & H2
 ---------------------------------*/
@@ -37,37 +33,31 @@ h1 {
     padding: 20px 0px 0px;
     text-align: center;
     font-weight: 700;
-    font-size: 30px;
-}
+    font-size: 40px; }
 
 h2 {
+    margin-top: -5px;
+    font-weight: 500;
     text-align: center;
-    color: #57b45b;
-}
-
+    color: #57b45b; }
 /*---------------------------------
-        Fieldset
+        Box
 ---------------------------------*/
-fieldset {
+div#box {
     max-width: 200px;
-    margin: 10px auto;
-    padding: 20px;
+    margin: 30px auto;
+    padding: 10px;
     display: flex;
     flex-flow: column;
     align-items: flex-end;
     justify-content: center;
-    border-radius: 3px;
-    border: dashed 1px white;
-}
-/*---------------------------------
-        Legend
----------------------------------*/
-legend {
-    font-size: 18px;
-    padding: 0px 5px;
-}
+    border-right: dashed 1px white; }
 /*---------------------------------
         Âncora
 ---------------------------------*/
-a { text-decoration: none; color: white; }
-a:hover{ color: #57b45b; }
+a {
+    font-size: 18px;
+    text-decoration: none; 
+    color: white; }
+
+a:hover{ color: gold; }
